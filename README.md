@@ -96,7 +96,7 @@ Se aplicó el método más adecuado según el tipo de variables:
 1. Clona este repositorio.
 
 ```bash
-git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git
+git clone https://github.com/lauraocampo9402-hub/Novaretail-_Project.git
 ```
 
 2. Abre el notebook con:
