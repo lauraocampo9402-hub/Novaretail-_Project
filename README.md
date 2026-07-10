@@ -71,12 +71,19 @@ Se aplicó el método más adecuado según el tipo de variables:
 
 ---
 
-## 📈 Principales hallazgos
+## 📊 Principales hallazgos
 
-- Se identificó una **correlación positiva muy fuerte** entre `compras_mes` e `ingreso_anual`.
-- Se observó una **correlación positiva moderada** entre `visitas_mes` y `gasto_publicidad_dirigida`.
-- No se encontraron asociaciones relevantes entre `abandono` e `ingreso_anual`.
-- La asociación entre `region` y `tipo_dispositivo` resultó prácticamente nula.
+- Se identificó una **correlación positiva muy fuerte** entre **`compras_mes`** e **`ingreso_anual`** (Pearson ≈ **0.97**), lo que indica que ambas variables presentan una asociación lineal de alta intensidad.
+
+- Se observó una **correlación positiva moderada** entre **`visitas_mes`** e **`ingreso_anual`** (Spearman ≈ **0.32**), lo que sugiere que, en general, un mayor número de visitas mensuales tiende a asociarse con mayores ingresos anuales, aunque con una dispersión considerable.
+
+- La relación entre **`abandono`** e **`ingreso_anual`**, evaluada mediante la correlación punto-biserial, fue prácticamente nula, por lo que no se observó una asociación lineal relevante entre ambas variables.
+
+- La relación entre **`miembro_premium`** e **`ingreso_anual`**, evaluada mediante la correlación punto-biserial, fue positiva pero de **baja magnitud**, indicando una asociación débil.
+
+- El análisis mediante **V de Cramér** mostró que las asociaciones entre **`abandono`** y las variables categóricas (`tipo_dispositivo`, `region` y `miembro_premium`) fueron **débiles o prácticamente inexistentes**. La mayor asociación se observó con `miembro_premium` (V ≈ **0.12**), aunque su intensidad continúa siendo baja.
+
+- En todos los casos, los resultados describen **asociaciones estadísticas** y **no permiten establecer relaciones de causalidad**.
 
 ---
 
@@ -112,19 +119,6 @@ pip install pandas numpy matplotlib seaborn scipy
 ```
 
 4. Ejecuta las celdas en orden.
-
----
-
-## 📂 Estructura del repositorio
-
-```
-Proyecto_7/
-│
-├── Proyecto7_NovaRetail.ipynb
-├── README.md
-└── dataset/
-    └── nova_market_activity.csv
-```
 
 ---
 
